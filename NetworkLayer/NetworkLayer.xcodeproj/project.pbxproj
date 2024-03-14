@@ -12,6 +12,7 @@
 		BA10B77B2B729CF6009DAC69 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BA10B77A2B729CF6009DAC69 /* ReactiveMoya */; };
 		BA10B77D2B729CF6009DAC69 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BA10B77C2B729CF6009DAC69 /* RxMoya */; };
 		BA506DFA2BA33CB8002F537A /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506DF92BA33CB8002F537A /* UserDefaultsService.swift */; };
+		BA506E002BA363C8002F537A /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = BA506DFF2BA363C8002F537A /* Factory */; };
 		BA79A46E2B725265009211BA /* NetworkLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = BA79A46D2B725265009211BA /* NetworkLayer.docc */; };
 		BA79A46F2B725265009211BA /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BA79A46C2B725265009211BA /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA79A4A42B725CEF009211BA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A32B725CEF009211BA /* NetworkService.swift */; };
@@ -35,6 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA10B7792B729CF6009DAC69 /* Moya in Frameworks */,
+				BA506E002BA363C8002F537A /* Factory in Frameworks */,
 				BA10B7772B729CF6009DAC69 /* CombineMoya in Frameworks */,
 				BA10B77D2B729CF6009DAC69 /* RxMoya in Frameworks */,
 				BA10B77B2B729CF6009DAC69 /* ReactiveMoya in Frameworks */,
@@ -138,6 +140,7 @@
 				BA10B7782B729CF6009DAC69 /* Moya */,
 				BA10B77A2B729CF6009DAC69 /* ReactiveMoya */,
 				BA10B77C2B729CF6009DAC69 /* RxMoya */,
+				BA506DFF2BA363C8002F537A /* Factory */,
 			);
 			productName = NetworkLayer;
 			productReference = BA79A4692B725265009211BA /* NetworkLayer.framework */;
@@ -168,6 +171,7 @@
 			mainGroup = BA79A45F2B725265009211BA;
 			packageReferences = (
 				BA10B7752B729CF6009DAC69 /* XCRemoteSwiftPackageReference "Moya" */,
+				BA506DFE2BA363C8002F537A /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = BA79A46A2B725265009211BA /* Products */;
 			projectDirPath = "";
@@ -423,6 +427,14 @@
 				minimumVersion = 15.0.3;
 			};
 		};
+		BA506DFE2BA363C8002F537A /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -445,6 +457,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BA10B7752B729CF6009DAC69 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		BA506DFF2BA363C8002F537A /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA506DFE2BA363C8002F537A /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
