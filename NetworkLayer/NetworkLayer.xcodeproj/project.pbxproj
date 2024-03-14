@@ -13,6 +13,7 @@
 		BA10B77D2B729CF6009DAC69 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BA10B77C2B729CF6009DAC69 /* RxMoya */; };
 		BA506DFA2BA33CB8002F537A /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506DF92BA33CB8002F537A /* UserDefaultsService.swift */; };
 		BA506DFD2BA353C0002F537A /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = BA506DFC2BA353C0002F537A /* Factory */; };
+16ba12c44771f324129d19e81463f131e20c0d5c
 		BA79A46E2B725265009211BA /* NetworkLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = BA79A46D2B725265009211BA /* NetworkLayer.docc */; };
 		BA79A46F2B725265009211BA /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BA79A46C2B725265009211BA /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA79A4A42B725CEF009211BA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A32B725CEF009211BA /* NetworkService.swift */; };
