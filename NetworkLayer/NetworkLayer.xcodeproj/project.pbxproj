@@ -11,20 +11,22 @@
 		BA10B7792B729CF6009DAC69 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = BA10B7782B729CF6009DAC69 /* Moya */; };
 		BA10B77B2B729CF6009DAC69 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BA10B77A2B729CF6009DAC69 /* ReactiveMoya */; };
 		BA10B77D2B729CF6009DAC69 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BA10B77C2B729CF6009DAC69 /* RxMoya */; };
+		BA506DFA2BA33CB8002F537A /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506DF92BA33CB8002F537A /* UserDefaultsService.swift */; };
 		BA79A46E2B725265009211BA /* NetworkLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = BA79A46D2B725265009211BA /* NetworkLayer.docc */; };
 		BA79A46F2B725265009211BA /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BA79A46C2B725265009211BA /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA79A4A42B725CEF009211BA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A32B725CEF009211BA /* NetworkService.swift */; };
-		BA79A4A62B725D09009211BA /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A52B725D09009211BA /* UserAPI.swift */; };
-		BA79A4A82B725DB5009211BA /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A72B725DB5009211BA /* UserResponse.swift */; };
+		BA79A4A62B725D09009211BA /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A52B725D09009211BA /* AuthAPI.swift */; };
+		BA79A4A82B725DB5009211BA /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A72B725DB5009211BA /* AuthModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA506DF92BA33CB8002F537A /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		BA79A4692B725265009211BA /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA79A46C2B725265009211BA /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
 		BA79A46D2B725265009211BA /* NetworkLayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkLayer.docc; sourceTree = "<group>"; };
 		BA79A4A32B725CEF009211BA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		BA79A4A52B725D09009211BA /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
-		BA79A4A72B725DB5009211BA /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		BA79A4A52B725D09009211BA /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		BA79A4A72B725DB5009211BA /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA506DF82BA33C93002F537A /* UserDefaultsService */ = {
+			isa = PBXGroup;
+			children = (
+				BA506DF92BA33CB8002F537A /* UserDefaultsService.swift */,
+			);
+			path = UserDefaultsService;
+			sourceTree = "<group>";
+		};
 		BA79A45F2B725265009211BA = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +71,7 @@
 		BA79A46B2B725265009211BA /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				BA506DF82BA33C93002F537A /* UserDefaultsService */,
 				BA79A4A02B725CBE009211BA /* NetworkService */,
 				BA79A4A12B725CCE009211BA /* APIs */,
 				BA79A4A22B725CD5009211BA /* Models */,
@@ -81,7 +92,7 @@
 		BA79A4A12B725CCE009211BA /* APIs */ = {
 			isa = PBXGroup;
 			children = (
-				BA79A4A52B725D09009211BA /* UserAPI.swift */,
+				BA79A4A52B725D09009211BA /* AuthAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -89,7 +100,7 @@
 		BA79A4A22B725CD5009211BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BA79A4A72B725DB5009211BA /* UserResponse.swift */,
+				BA79A4A72B725DB5009211BA /* AuthModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,8 +195,9 @@
 			files = (
 				BA79A4A42B725CEF009211BA /* NetworkService.swift in Sources */,
 				BA79A46E2B725265009211BA /* NetworkLayer.docc in Sources */,
-				BA79A4A62B725D09009211BA /* UserAPI.swift in Sources */,
-				BA79A4A82B725DB5009211BA /* UserResponse.swift in Sources */,
+				BA506DFA2BA33CB8002F537A /* UserDefaultsService.swift in Sources */,
+				BA79A4A62B725D09009211BA /* AuthAPI.swift in Sources */,
+				BA79A4A82B725DB5009211BA /* AuthModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
