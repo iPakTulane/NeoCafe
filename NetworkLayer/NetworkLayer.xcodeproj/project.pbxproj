@@ -11,20 +11,25 @@
 		BA10B7792B729CF6009DAC69 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = BA10B7782B729CF6009DAC69 /* Moya */; };
 		BA10B77B2B729CF6009DAC69 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BA10B77A2B729CF6009DAC69 /* ReactiveMoya */; };
 		BA10B77D2B729CF6009DAC69 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = BA10B77C2B729CF6009DAC69 /* RxMoya */; };
+		BA2368B12BA47D2200867B81 /* InjectionDefaultContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2368B02BA47D2200867B81 /* InjectionDefaultContainer.swift */; };
+		BA506DFA2BA33CB8002F537A /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA506DF92BA33CB8002F537A /* UserDefaultsService.swift */; };
+		BA506E002BA363C8002F537A /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = BA506DFF2BA363C8002F537A /* Factory */; };
 		BA79A46E2B725265009211BA /* NetworkLayer.docc in Sources */ = {isa = PBXBuildFile; fileRef = BA79A46D2B725265009211BA /* NetworkLayer.docc */; };
 		BA79A46F2B725265009211BA /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = BA79A46C2B725265009211BA /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA79A4A42B725CEF009211BA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A32B725CEF009211BA /* NetworkService.swift */; };
-		BA79A4A62B725D09009211BA /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A52B725D09009211BA /* UserAPI.swift */; };
-		BA79A4A82B725DB5009211BA /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A72B725DB5009211BA /* UserResponse.swift */; };
+		BA79A4A62B725D09009211BA /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A52B725D09009211BA /* AuthAPI.swift */; };
+		BA79A4A82B725DB5009211BA /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79A4A72B725DB5009211BA /* AuthModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA2368B02BA47D2200867B81 /* InjectionDefaultContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionDefaultContainer.swift; sourceTree = "<group>"; };
+		BA506DF92BA33CB8002F537A /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		BA79A4692B725265009211BA /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA79A46C2B725265009211BA /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
 		BA79A46D2B725265009211BA /* NetworkLayer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkLayer.docc; sourceTree = "<group>"; };
 		BA79A4A32B725CEF009211BA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		BA79A4A52B725D09009211BA /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
-		BA79A4A72B725DB5009211BA /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		BA79A4A52B725D09009211BA /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		BA79A4A72B725DB5009211BA /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA10B7792B729CF6009DAC69 /* Moya in Frameworks */,
+				BA506E002BA363C8002F537A /* Factory in Frameworks */,
 				BA10B7772B729CF6009DAC69 /* CombineMoya in Frameworks */,
 				BA10B77D2B729CF6009DAC69 /* RxMoya in Frameworks */,
 				BA10B77B2B729CF6009DAC69 /* ReactiveMoya in Frameworks */,
@@ -42,6 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA2368AF2BA47D0400867B81 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				BA2368B02BA47D2200867B81 /* InjectionDefaultContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		BA506DF82BA33C93002F537A /* UserDefaultsService */ = {
+			isa = PBXGroup;
+			children = (
+				BA506DF92BA33CB8002F537A /* UserDefaultsService.swift */,
+			);
+			path = UserDefaultsService;
+			sourceTree = "<group>";
+		};
 		BA79A45F2B725265009211BA = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +83,8 @@
 		BA79A46B2B725265009211BA /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				BA2368AF2BA47D0400867B81 /* DI */,
+				BA506DF82BA33C93002F537A /* UserDefaultsService */,
 				BA79A4A02B725CBE009211BA /* NetworkService */,
 				BA79A4A12B725CCE009211BA /* APIs */,
 				BA79A4A22B725CD5009211BA /* Models */,
@@ -81,7 +105,7 @@
 		BA79A4A12B725CCE009211BA /* APIs */ = {
 			isa = PBXGroup;
 			children = (
-				BA79A4A52B725D09009211BA /* UserAPI.swift */,
+				BA79A4A52B725D09009211BA /* AuthAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -89,7 +113,7 @@
 		BA79A4A22B725CD5009211BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BA79A4A72B725DB5009211BA /* UserResponse.swift */,
+				BA79A4A72B725DB5009211BA /* AuthModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,6 +151,7 @@
 				BA10B7782B729CF6009DAC69 /* Moya */,
 				BA10B77A2B729CF6009DAC69 /* ReactiveMoya */,
 				BA10B77C2B729CF6009DAC69 /* RxMoya */,
+				BA506DFF2BA363C8002F537A /* Factory */,
 			);
 			productName = NetworkLayer;
 			productReference = BA79A4692B725265009211BA /* NetworkLayer.framework */;
@@ -157,6 +182,7 @@
 			mainGroup = BA79A45F2B725265009211BA;
 			packageReferences = (
 				BA10B7752B729CF6009DAC69 /* XCRemoteSwiftPackageReference "Moya" */,
+				BA506DFE2BA363C8002F537A /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = BA79A46A2B725265009211BA /* Products */;
 			projectDirPath = "";
@@ -183,9 +209,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA79A4A42B725CEF009211BA /* NetworkService.swift in Sources */,
+				BA2368B12BA47D2200867B81 /* InjectionDefaultContainer.swift in Sources */,
 				BA79A46E2B725265009211BA /* NetworkLayer.docc in Sources */,
-				BA79A4A62B725D09009211BA /* UserAPI.swift in Sources */,
-				BA79A4A82B725DB5009211BA /* UserResponse.swift in Sources */,
+				BA506DFA2BA33CB8002F537A /* UserDefaultsService.swift in Sources */,
+				BA79A4A62B725D09009211BA /* AuthAPI.swift in Sources */,
+				BA79A4A82B725DB5009211BA /* AuthModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +439,14 @@
 				minimumVersion = 15.0.3;
 			};
 		};
+		BA506DFE2BA363C8002F537A /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -433,6 +469,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BA10B7752B729CF6009DAC69 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		BA506DFF2BA363C8002F537A /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA506DFE2BA363C8002F537A /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
